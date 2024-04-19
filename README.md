@@ -2,9 +2,7 @@
 
 **GitHub Action that will create a pull request from the current branch.**
 
-Useful in combination with my other action [devops-infra/action-commit-push](https://github.com/devops-infra/action-commit-push).
-
-Dockerized as [devopsinfra/action-pull-request](https://hub.docker.com/repository/docker/devopsinfra/action-pull-request).
+Dockerized as [echapmanFromBunnings/action-pull-request](https://hub.docker.com/repository/docker/echapmanFromBunnings/action-pull-request).
 
 Features:
 * Creates pull request if triggered from a current branch or any specified by `source_branch` to a `target_branch`.
@@ -37,7 +35,7 @@ Features:
 
 ```yaml
     - name: Run the Action
-      uses: devops-infra/action-pull-request@v0.5.5
+      uses: echapmanFromBunnings/action-pull-request@v0.0.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         source_branch: development
@@ -55,6 +53,7 @@ Features:
         get_diff: true
         ignore_users: "dependabot"
         allow_no_diff: false
+        path: repo
 ```
 
 
@@ -76,6 +75,7 @@ Features:
 | target_branch  | No       | `master`                      | Name of the target branch. Change it if you use `main`.                                                                  |
 | template       | No       | `""`                          | Template file location.                                                                                                  |
 | title          | No       | *subject of the first commit* | Pull request title.                                                                                                      |
+| path           | No       | "./"                          | The path to run this action under                                                                                        |
 
 
 | Outputs   | Description                   |

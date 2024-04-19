@@ -21,6 +21,9 @@ echo "  old_string: ${INPUT_OLD_STRING}"
 echo "  new_string: ${INPUT_NEW_STRING}"
 echo "  ignore_users: ${INPUT_IGNORE_USERS}"
 echo "  allow_no_diff: ${INPUT_ALLOW_NO_DIFF}"
+echo "  path: ${PATH}"
+
+cd ${PATH}
 
 # Skip whole script to not cause errors
 IFS=',' read -r -a IGNORE_USERS <<< "${INPUT_IGNORE_USERS}"

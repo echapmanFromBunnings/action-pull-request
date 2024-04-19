@@ -5,11 +5,11 @@ FROM ubuntu:jammy-20240405
 # And for https://github.com/opencontainers/image-spec/blob/master/annotations.md
 # And for https://help.github.com/en/actions/building-actions/metadata-syntax-for-github-actions
 ARG NAME="GitHub Action for creating Pull Requests"
-ARG DESCRIPTION="GitHub Action that will create a pull request from the current branch"
+ARG DESCRIPTION="GitHub Action that will create a pull request from the current branch with path options"
 ARG REPO_URL="https://github.com/devops-infra/action-pull-request"
-ARG AUTHOR="Krzysztof Szyper / ChristophShyper / biotyk@mail.com"
-ARG HOMEPAGE="https://christophshyper.github.io/"
-ARG BUILD_DATE=2020-04-01T00:00:00Z
+ARG AUTHOR="Eric Chapman / Krzysztof Szyper / ChristophShyper / biotyk@mail.com"
+ARG HOMEPAGE="https://echapmanFromBunnings.github.io/"
+ARG BUILD_DATE=2024-04-19T00:00:00Z
 ARG VCS_REF=abcdef1
 ARG VERSION=v0.0
 LABEL \
@@ -31,7 +31,7 @@ LABEL \
   org.opencontainers.image.created="${BUILD_DATE}" \
   org.opencontainers.image.authors="${AUTHOR}" \
   org.opencontainers.image.url="${HOMEPAGE}" \
-  org.opencontainers.image.documentation="${REPO_URL}/blob/master/README.md" \
+  org.opencontainers.image.documentation="${REPO_URL}/blob/main/README.md" \
   org.opencontainers.image.source="${REPO_URL}" \
   org.opencontainers.image.version="${VERSION}" \
   org.opencontainers.image.revision="${VCS_REF}" \

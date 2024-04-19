@@ -6,7 +6,7 @@ updates:
     schedule:
       interval: daily
     assignees:
-      - ChristophShyper
+      - echapmanFromBunnings
     labels:
       - automatic
 
@@ -16,7 +16,7 @@ updates:
     schedule:
       interval: daily
     assignees:
-      - ChristophShyper
+      - echapmanFromBunnings
     labels:
       - automatic
 
@@ -26,6 +26,6 @@ updates:
 #    schedule:
 #      interval: daily
 #    assignees:
-#      - ChristophShyper
+#      - echapmanFromBunnings
 #    labels:
 #      - automatic

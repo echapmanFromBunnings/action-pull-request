@@ -1,5 +1,5 @@
 name: GitHub Action for creating Pull Requests
-author: Krzysztof Szyper / ChristophShyper / biotyk@mail.com
+author: Eric Chapman / Krzysztof Szyper / ChristophShyper / biotyk@mail.com
 description: GitHub Action that will create a pull request from the current branch
 inputs:
   github_token:
@@ -64,12 +64,16 @@ inputs:
     description: Allows to continue on merge commits with no diffs
     required: false
     default: "false"
+  path:
+    description: path to run this under
+    required: false
+    default: "./"
 outputs:
   url:
     description: Pull request URL.
 runs:
   using: docker
-  image: docker://devopsinfra/action-pull-request:v0.5.5
+  image: docker://echapmanFromBunnings/action-pull-request:v0.0.1
   env:
     GITHUB_TOKEN: ${{ inputs.github_token }}
 branding:
